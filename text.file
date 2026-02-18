@@ -1,0 +1,40 @@
+#Create multi brand
+dotnet new sln -n MultiPlatform
+dotnet new classlib -n MultiPlatform.Core
+dotnet new classlib -n MultiPlatform.Application
+dotnet new classlib -n MultiPlatform.Infrastructure
+dotnet new mvc -n MultiPlatform.Web
+
+#Masukan semua projek ke solution
+dotnet sln add MultiPlatform.Core
+dotnet sln add MultiPlatform.Application
+dotnet sln add MultiPlatform.Infrastructure
+dotnet sln add MultiPlatform.Web
+
+#Setup Dependency Antar Layer
+dotnet add MultiPlatform.Application reference MultiPlatform.Core
+dotnet add MultiPlatform.Infrastructure reference MultiPlatform.Application
+dotnet add MultiPlatform.Infrastructure reference MultiPlatform.Core
+dotnet add MultiPlatform.Web reference MultiPlatform.Application
+dotnet add MultiPlatform.Web reference MultiPlatform.Infrastructure
+
+#Install EF Core SQL Server dan EF Core Tools lainnya di sln
+
+dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.0
+dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.Tools --version 8.0.0
+dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.Design --version 8.0.0
+dotnet add MultiPlatform.Web package Microsoft.EntityFrameworkCore.Design --version 8.0.0
+
+#Migration
+dotnet ef migrations add InitialCreate --project MultiPlatform.Infrastructure --startup-project MultiPlatform.Web --output-dir Persistence/Migrations
+
+#Update Db
+dotnet ef database update --project MultiPlatform.Infrastructure --startup-project MultiPlatform.Web
+
+#Add localhost C:\Windows\System32\drivers\etc\hosts
+127.0.0.1 demo.localhost
+127.0.0.1 toko.localhost
+127.0.0.1 client.localhost
+
+
+

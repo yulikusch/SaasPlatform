@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MultiPlatform.Web.props" />
+</Project>

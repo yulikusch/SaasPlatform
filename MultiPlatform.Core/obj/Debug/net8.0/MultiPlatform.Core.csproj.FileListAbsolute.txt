@@ -1,0 +1,11 @@
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\bin\Debug\net8.0\MultiPlatform.Core.deps.json
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\bin\Debug\net8.0\MultiPlatform.Core.dll
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\bin\Debug\net8.0\MultiPlatform.Core.pdb
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.AssemblyInfoInputs.cache
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.AssemblyInfo.cs
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.csproj.CoreCompileInputs.cache
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.dll
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\refint\MultiPlatform.Core.dll
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.pdb
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\ref\MultiPlatform.Core.dll
