@@ -9,3 +9,4 @@ C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPl
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\refint\MultiPlatform.Core.dll
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.pdb
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\ref\MultiPlatform.Core.dll
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Core\obj\Debug\net8.0\MultiPlatform.Core.sourcelink.json

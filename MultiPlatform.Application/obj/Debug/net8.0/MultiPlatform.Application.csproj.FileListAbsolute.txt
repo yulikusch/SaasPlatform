@@ -13,3 +13,4 @@ C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Application\obj\Debug\net8.0\
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Application\obj\Debug\net8.0\refint\MultiPlatform.Application.dll
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Application\obj\Debug\net8.0\MultiPlatform.Application.pdb
 C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Application\obj\Debug\net8.0\ref\MultiPlatform.Application.dll
+C:\MyData\aplikasi asp\MultiPlatform\MultiPlatform.Application\obj\Debug\net8.0\MultiPlatform.Application.sourcelink.json

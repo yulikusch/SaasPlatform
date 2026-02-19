@@ -9,5 +9,6 @@ namespace MultiPlatform.Application.Common.Interfaces
     public interface ITenantContext
     {
         Tenant? CurrentTenant { get; set; }
+        void SetTenant(Tenant tenant);
     }
 }

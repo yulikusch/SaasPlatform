@@ -1470,6 +1470,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "MultiPlatform.Core": "1.0.0"
         },
         "compile": {
@@ -4041,11 +4042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj",
+      "projectUniqueName": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj",
       "projectName": "MultiPlatform.Web",
-      "projectPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj",
+      "projectPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj",
       "packagesPath": "C:\\Users\\usr\\.nuget\\packages\\",
-      "outputPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\obj\\",
+      "outputPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

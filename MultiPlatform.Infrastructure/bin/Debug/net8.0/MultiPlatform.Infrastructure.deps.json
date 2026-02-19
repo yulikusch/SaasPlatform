@@ -853,6 +853,7 @@
       },
       "MultiPlatform.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "MultiPlatform.Core": "1.0.0"
         },
         "runtime": {

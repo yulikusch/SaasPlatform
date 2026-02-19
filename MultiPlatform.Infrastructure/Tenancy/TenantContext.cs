@@ -10,5 +10,9 @@ namespace MultiPlatform.Infrastructure.Tenancy
     public class TenantContext : ITenantContext
     {
         public Tenant? CurrentTenant { get; set; }
+        public void SetTenant(Tenant tenant)
+        {
+            CurrentTenant = tenant;
+        }
     }
 }

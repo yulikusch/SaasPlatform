@@ -3,11 +3,10 @@ using MultiPlatform.Core.Entities;
 using MultiPlatform.Application.Common.Interfaces;
 using MultiPlatform.Application.Entities;
 
-
-
 namespace MultiPlatform.Infrastructure.Data;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext
+    : DbContext, IApplicationDbContext
 {
     private readonly ITenantContext _tenantContext;
 
@@ -24,21 +23,27 @@ public class ApplicationDbContext : DbContext
     public DbSet<Product> Products => Set<Product>();
 
 
+    // ✅ TENANT DINAMIS PER REQUEST
+    public Guid CurrentTenantId =>
+        _tenantContext.CurrentTenant?.Id ?? Guid.Empty;
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        var tenantId = _tenantContext.CurrentTenant?.Id;
-
+        // ✅ GLOBAL QUERY FILTER MULTI TENANT
         modelBuilder.Entity<BlogPost>()
-            .HasQueryFilter(x => x.TenantId == tenantId);
+            .HasQueryFilter(x => x.TenantId == CurrentTenantId);
 
         modelBuilder.Entity<Product>()
-            .HasQueryFilter(x => x.TenantId == tenantId);
+            .HasQueryFilter(x => x.TenantId == CurrentTenantId);
     }
 
+
+    // ✅ AUTO SET TENANT ID SAAT INSERT
     public override Task<int> SaveChangesAsync(
-    CancellationToken cancellationToken = default)
+        CancellationToken cancellationToken = default)
     {
         var tenantId = _tenantContext.CurrentTenant?.Id;
 
@@ -58,6 +63,4 @@ public class ApplicationDbContext : DbContext
 
         return base.SaveChangesAsync(cancellationToken);
     }
-
-
 }
