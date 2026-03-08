@@ -3,6 +3,7 @@ using MultiPlatform.Infrastructure.Data;
 using MultiPlatform.Application.Common.Interfaces;
 using MultiPlatform.Infrastructure.Tenancy;
 using MultiPlatform.Infrastructure.Seed;
+using MultiPlatform.Application.Features.Tenants;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,20 @@ builder.Services.AddScoped<IApplicationDbContext>(sp =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ITenantContext, TenantContext>();
+builder.Services.AddScoped<CreateTenantHandler>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -31,6 +45,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.UseMiddleware<TenantResolutionMiddleware>();
 app.UseMiddleware<TenantValidationMiddleware>();
 app.UseAuthorization();

@@ -24,6 +24,12 @@ dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.Sq
 dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.Tools --version 8.0.0
 dotnet add MultiPlatform.Infrastructure package Microsoft.EntityFrameworkCore.Design --version 8.0.0
 dotnet add MultiPlatform.Web package Microsoft.EntityFrameworkCore.Design --version 8.0.0
+dotnet add MultiPlatform.Application package Microsoft.EntityFrameworkCore --version 8.0.0
+
+#Instal Sweager
+dotnet add package Swashbuckle.AspNetCore
+
+
 
 #Migration
 dotnet ef migrations add InitialCreate --project MultiPlatform.Infrastructure --startup-project MultiPlatform.Web --output-dir Persistence/Migrations

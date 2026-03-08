@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj": {}
+    "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj": {}
   },
   "projects": {
     "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Application\\MultiPlatform.Application.csproj": {
@@ -222,14 +222,14 @@
         }
       }
     },
-    "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj": {
+    "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj",
+        "projectUniqueName": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj",
         "projectName": "MultiPlatform.Web",
-        "projectPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\MultiPlatform.Web.csproj",
+        "projectPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\MultiPlatform.Web.csproj",
         "packagesPath": "C:\\Users\\usr\\.nuget\\packages\\",
-        "outputPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.web\\obj\\",
+        "outputPath": "C:\\MyData\\aplikasi asp\\MultiPlatform\\MultiPlatform.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -275,6 +275,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.4, )"
             }
           },
           "imports": [

@@ -66,9 +66,21 @@ public class TenantResolutionMiddleware
             return;
         }
 
+        // =========================
+        // 4. BLOCK IF NOT ACTIVE
+        // =========================
+        if (!tenant.IsActive)
+        {
+            context.Response.StatusCode = 403;
+            await context.Response.WriteAsync("Tenant tidak aktif.");
+            return;
+        }
+
         tenantContext.SetTenant(tenant);
 
         await _next(context);
     }
+
+
 
 }
